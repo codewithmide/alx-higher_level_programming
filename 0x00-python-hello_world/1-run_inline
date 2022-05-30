@@ -1,3 +1,3 @@
-#!/usr/bin/python3
+#!/bin/bash
 
-print(f"Best School: {88+10}")
+echo $PYCODE | python3
