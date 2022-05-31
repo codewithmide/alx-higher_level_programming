@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for a in range(ord('a'), ord('z')):
-    print(f"{a:c}", end='')
+for i in range(97, 123):
+    print("{:c}".format(i), end="")
