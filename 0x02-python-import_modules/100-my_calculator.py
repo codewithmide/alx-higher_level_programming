@@ -18,3 +18,5 @@ elif argv[2] == "*":
     print(f'{a} {argv[2]} {b} = {add(a, b)}')
 elif argv[2] == "/":
     print(f'{a} {argv[2]} {b} = {add(a, b)}')
+else:
+    exit()
