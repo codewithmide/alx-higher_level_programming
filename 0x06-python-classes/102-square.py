@@ -24,9 +24,9 @@ class Square:
 
         Returns:
             The area of the square
-        """    
+        """
         return (self.__size) ** 2
-    
+
     @property
     def size(self):
         """getter of __size
@@ -60,7 +60,6 @@ class Square:
         Returns:
             True or False
         """
-    
         return self.size < other.size
 
     def __le__(self, other):
@@ -84,7 +83,7 @@ class Square:
             True or False
         """
         return self.size == other.size
-    
+
     def __ne__(self, other):
         """Compare if square is not equal to another by area
         Args:
