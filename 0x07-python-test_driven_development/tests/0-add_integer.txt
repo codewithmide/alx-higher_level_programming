@@ -1,41 +1,37 @@
-# 0-add_integer.txt
+The ``0-add_integer`` module
+============================
 
-``add_integer()`` returns the sum of two integers.
-value is equivalent to using the ``+`` operator.
+This is an example text file in reStructuredText format.  First import
 
-::
+``add_integer`` from the ``0-add_integer`` module:
 
-Test integer
+    >>> add_integer = __import__('0-add_integer').add_integer
 
-    >>> add_integer = __import__("0-add_integer").add_integer
+
+
+Now use it:
+
     >>> add_integer(1, 2)
     3
     >>> add_integer(100, -2)
     98
     >>> add_integer(2)
     100
-
-Test float
-
     >>> add_integer(100.3, -2)
     98
-
-Test strings
-
-    >>> add_integer(4, "School")
+    >>> add_integer('a')
     Traceback (most recent call last):
-    Exception: b must be an integer
-
-    >>> add_integer("School", 4)
+    ...
+    TypeError: a must be an integer
+    >>> add_integer(4, 'School')
     Traceback (most recent call last):
-    Exception: a must be an integer
-
-Test None
-
-    >>> add_integer(None)
+    ...
+    TypeError: b must be an integer
+    >>> add_integer(True)
     Traceback (most recent call last):
-    Exception: b must be integer
-
-    >>> add_integer(None)
+    ...
+    TypeError: a must be an integer
+    >>> add_integer(-28, None)
     Traceback (most recent call last):
-    Exception: a must be an integer
+    ...
+    TypeError: b must be an integer
