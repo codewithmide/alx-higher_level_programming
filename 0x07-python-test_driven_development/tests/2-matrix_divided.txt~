@@ -1,0 +1,20 @@
+============================
+Test for 2-matrix_divided.py
+----------------------------
+
+
+>>> matrix_divided([[4, "Betty" , 4], [3, -4 , 10.50000]], 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided([[4, 4], [3, -4 , 10.50000]], 2)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix_divided([[4, "Betty" , 4], [3, -4 , 10.50000]], "C")
+Traceback (most recent call last):
+TypeError: div must be a number
+
+>>> matrix_divided([[4, "Betty" , 4], [3, -4 , 10.50000]], 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
