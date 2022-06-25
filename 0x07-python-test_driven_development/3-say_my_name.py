@@ -4,6 +4,8 @@ a function that prints My name is <first name> <last name>
 The first name must be a string
 The last name must be a string
 """
+
+
 def say_my_name(first_name, last_name=""):
     """
     Defining the function name and arguments to be taken
