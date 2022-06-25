@@ -1,0 +1,23 @@
+=========================
+Test for 3-say_my_name.py
+-------------------------
+
+File Test
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+First argument Test
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+Second argument Test
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+Third argument Test
+>>> say_my_name("Bob")
+My name is Bob 
+
+Fourth try Test
+>>> say_my_name(12, "White")
+Traceback (most recent call last):
+TypeError: first_name must be a string
