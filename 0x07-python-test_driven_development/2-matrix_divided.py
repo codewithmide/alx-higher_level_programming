@@ -19,7 +19,7 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     if type(matrix) is not list or len(matrix) == 0:
-        raise  TypeError(message)
+        raise TypeError(message)
 
     for row in matrix:
         if type(row) is not list or len(row) == 0:
