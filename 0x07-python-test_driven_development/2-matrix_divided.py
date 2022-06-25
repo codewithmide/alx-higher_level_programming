@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 Function that divides all elemets of a matrix
+Each number must be an integer or float
+Matrix must always be a list of lists
 """
 
 
