@@ -81,5 +81,5 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        string = "\n".join(["#" * self.__width for rows in range (self.__height)])
-        return string
+        st = "\n".join(["#" * self.__width for rows in range(self.__height)])
+        return st
