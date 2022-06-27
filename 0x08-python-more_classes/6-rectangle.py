@@ -98,3 +98,4 @@ class Rectangle:
         deletes an instance
         """
         print("Bye rectangle...")
+        type(self).number_of_instances -= 1
