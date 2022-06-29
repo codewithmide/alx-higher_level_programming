@@ -33,12 +33,12 @@ Non-string
 ==========
 
 ::
-	>>> say_my_name("Holberton", 3600)
+	>>> say_my_name("Olumide", 3600)
 	Traceback (most recent call last):
 	TypeError: last_name must be a string
 
 ::
-	>>> say_my_name(3600)
+	>>> say_my_name(3600, "Hello")
 	Traceback (most recent call last):
 	TypeError: first_name must be a string
 
