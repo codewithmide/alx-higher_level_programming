@@ -39,7 +39,6 @@ Test other data types:
      ...
      TypeError: last_name must be a string
 
-
 Test extra args:
 
      >>> say_my_name("Melissa", "Ng", "extra")
