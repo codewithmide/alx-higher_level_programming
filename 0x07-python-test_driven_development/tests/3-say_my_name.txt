@@ -1,60 +1,48 @@
-# run test with python3 -m doctest -v ./tests/3-say_my_name.txt
+ay_my_name.txt
 
 
 
-First import method to test
+===========================
 
->>> say_my_name = __import__('3-say_my_name').say_my_name
+How to Use 3-say_my_name.py
 
-
-
-SUCCESS CASES:
+===========================
 
 
 
-Test two strings given:
+Usage
 
-     >>> say_my_name("John", "Smith")
-     My name is John Smith
+=====
 
-     >>> say_my_name("Walter", "White")
-     My name is Walter White
+::
 
-     >>> say_my_name("Bob")
-     My name is Bob
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
 
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
 
-FAIL CASES:
+::
+	>>> sy_my_name("Walter", White")
+	My name is Walter White
 
+::
+	>>> say_my_name("Bob")
+	My name is Bob 
 
-Test other data types:
+Non-string
+==========
 
-     >>> say_my_name(123, "Last")
-     Traceback (most recent call last):
-     ...
-     TypeError: first_name must be a string
+::
+	>>> say_my_name("Holberton", 3600)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
 
-     >>> say_my_name("Melissa", 2)
-     Traceback (most recent call last):
-     ...
-     TypeError: last_name must be a string
+::
+	>>> say_my_name(3600)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
 
-Test extra args:
-
-     >>> say_my_name("Melissa", "Ng", "extra")
-     Traceback (most recent call last):
-     ...
-     TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
-
-
-Test too few args
-
-     >>> say_my_name()
-     Traceback (most recent call last):     ...
-     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
-
-
-     >>> say_my_name(None)
-     Traceback (most recent call last):
-     ...
-     TypeError: first_name must be a string
+::
+	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
