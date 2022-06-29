@@ -1,4 +1,4 @@
-ay_my_name.txt
+say_my_name.txt
 
 
 
@@ -22,23 +22,20 @@ Usage
 	My name is John Smith
 
 ::
-	>>> sy_my_name("Walter", White")
+	>>> say_my_name("Walter", "White")
 	My name is Walter White
 
 ::
 	>>> say_my_name("Bob")
 	My name is Bob 
 
-Non-string
-==========
-
 ::
-	>>> say_my_name("Olumide", 3600)
+	>>> say_my_name("Bob", 12)
 	Traceback (most recent call last):
-	TypeError: last_name must be a string
+	TypeError: first_name must be a string
 
 ::
-	>>> say_my_name(3600, "Hello")
+	>>> say_my_name(3, "Bob")
 	Traceback (most recent call last):
 	TypeError: first_name must be a string
 
