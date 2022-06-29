@@ -41,3 +41,9 @@ Test negative int size:
      Traceback (most recent call last):
      ...
      ValueError: size must be >= 0
+
+Test non-integer size:
+     >>> print_square("H")
+     Traceback (most recent call last):
+     ...
+     TypeError: size must be an integer
