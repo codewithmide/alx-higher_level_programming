@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Class"""
+"""
+Class
+"""
 
 
 class MyList(list):
