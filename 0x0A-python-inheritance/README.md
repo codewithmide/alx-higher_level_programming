@@ -26,6 +26,10 @@
 
 - What are, when and how to use isinstance, issubclass, type and super built-in functions
 
+## Doctest
+
+- python3 -m doctest -v ./tests/file-name.txt | tail -2
+
 
 # RESOURCES
 [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
