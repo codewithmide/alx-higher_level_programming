@@ -86,9 +86,11 @@ Test non-ints:
      ...
      TypeError: name must be an integer
 
-
-     >>> bg = BaseGeometry()
-
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", False)
+	Traceback (most recent call last):
+    	...
+	ValueError: name must be greater than 0
 
      >>> bg = BaseGeometry()
      >>> bg.integer_validator("name", {3, 4})
