@@ -28,12 +28,12 @@
 
 
 # RESOURCES
-![Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+[Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
 
-![Multiple inheritance](https://docs.python.org/3/tutorial/classes.html#multiple-inheritance)
+[Multiple inheritance](https://docs.python.org/3/tutorial/classes.html#multiple-inheritance)
 
-![Inheritance in Python](https://www.packt.com/inheritance-python/)
+[Inheritance in Python](https://www.packt.com/inheritance-python/)
 
-![Learn to program 10: Inheritancs Magic Method](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
+[Learn to program 10: Inheritancs Magic Method](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
 
 
