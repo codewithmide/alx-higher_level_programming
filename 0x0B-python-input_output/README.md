@@ -1,7 +1,7 @@
 # 0x0B. Python - Input/Output
 ## Ongoing project - started Jul 5, 2022, must end by Jul 6, 2022.
 
-#Resources
+# Resources
 ## Read or watch:
 - [7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 - [8.7. Predefined Clean-up Actions](https://docs.python.org/3/tutorial/errors.html#predefined-clean-up-actions)
