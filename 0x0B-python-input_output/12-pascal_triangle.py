@@ -7,7 +7,7 @@ def pascal_triangle(n):
     Pascal’s triangle of n
     """
     if n <= 0:
-        return []    
+        return []
 
     ls = [[0 for x in range(i + 1)] for i in range(n)]
     ls[0] = [1]
@@ -17,5 +17,5 @@ def pascal_triangle(n):
             if j < len(ls[i - 1]):
                 ls[i][j] = ls[i - 1][j - 1] + ls[i - 1][j]
             else:
-                ls[i][j] = ls[i - 1][0]   
+                ls[i][j] = ls[i - 1][0]
     return ls
