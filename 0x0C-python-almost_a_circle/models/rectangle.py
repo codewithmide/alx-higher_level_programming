@@ -108,3 +108,12 @@ class Rectangle(Base):
         ex, ye = self.x, self.y
         an, al = self.width, self.height
         print("\n" * ye + "\n".join(" " * ex + "#" * an for i in range(al)))
+
+    def __str__(self):
+        """
+        Update the class Rectangle by overriding the __str__ method
+        so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        first = f"({self.id}) {self.__x}/{self.__y}"
+        second = f"{self.__width}/{self.__height}"
+        return f"[Rectangle] {first} - {second}"
