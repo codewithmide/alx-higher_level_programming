@@ -118,10 +118,11 @@ class Rectangle(Base):
         second = f"{self.__width}/{self.__height}"
         return f"[Rectangle] {first} - {second}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Update the class Rectangle by adding the public method 
-        def update(self, *args): that assigns an argument to each attribute:
+        def update(self, *args, **kwargs): that assigns a key/value argument
+        to each attribute
         """
         count = 0
         if args is not None and len(args) != 0:
@@ -134,3 +135,16 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        Returns the dictionary representation of a
+        """
+        dic_rectangle = {
+                "id": self.id,
+                "width": self.__width,
+                "height": self.__height,
+                "x": self.__x,
+                "y": self.__y,
+                }
+        return dic_rectangle
