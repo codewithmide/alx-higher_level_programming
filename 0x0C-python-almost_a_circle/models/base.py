@@ -73,5 +73,5 @@ class Base:
                 for dictionary in obj_list:
                     result.append(cls.create(**dictionary))
                 return result
-        except:
+        except Exception:
             return result
