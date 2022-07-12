@@ -120,7 +120,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        Update the class Rectangle by adding the public method 
+        Update the class Rectangle by adding the public method
         def update(self, *args, **kwargs): that assigns a key/value argument
         to each attribute
         """
