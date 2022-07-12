@@ -3,6 +3,7 @@
 Write the class Square that inherits from Rectangle:
 """
 from models.rectangle import Rectangle
+from models.base import Base
 
 
 class Square(Rectangle):
@@ -20,9 +21,15 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """overriding to return [Square] + more information"""
-        return "[Square] ({}) {}/{} - {}"\
-            .format(self.id, self.x, self.y, self.height)
+        """
+        overriding to return [Square] + more information
+        """
+        cls = self.__class__.__name__
+        size = self.height
+        id = self.id
+        x = self.x
+        y = self.y
+        return "[{}] ({}) {}/{} - {}".format(cls, id, x, y, size)
 
     @property
     def size(self):
