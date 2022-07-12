@@ -22,7 +22,7 @@ class Square(Rectangle):
     def __str__(self):
         """overriding to return [Square] + more information"""
         return "[Square] ({}) {}/{} - {}"\
-                .format(self.id, self.x, self.y, self.height)
+            .format(self.id, self.x, self.y, self.height)
 
     @property
     def size(self):
