@@ -61,3 +61,12 @@ class Square(Rectangle):
         elif kwargs is not None:
             for key in kwargs:
                 setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        """creates a dictionary out of a given instance attributes"""
+        sq_rect = dict()
+        sq_rect["id"] = self.id
+        sq_rect["x"] = self.x
+        sq_rect["size"] = self.size
+        sq_rect["y"] = self.y
+        return sq_rect
