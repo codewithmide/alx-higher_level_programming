@@ -21,9 +21,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """overriding to return [Square] + more information"""
-        string = "[Square] ({:d}) {:d}/{:d} - {:d}"
-        string = string.format(self.id, self.x, self.y, self.width)
-        return string
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     @property
     def size(self):
