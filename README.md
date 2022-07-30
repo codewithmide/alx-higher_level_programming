@@ -1,1 +1,5 @@
-# alx-higher_level_programming
+# HIGH LEVEL PROGRAMMING
+
+- Python
+- SQL
+- JAVASCRIPT
