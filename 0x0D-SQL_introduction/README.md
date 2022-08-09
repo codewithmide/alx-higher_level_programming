@@ -75,6 +75,7 @@ SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 
 $
 ```
 <h4>Install MySQL 8.0 on Ubuntu 20.04 LTS</h4>
+
 ```
 $ sudo apt update
 $ sudo apt install mysql-server
@@ -83,7 +84,9 @@ $ mysql --version
 mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 $
 ```
+
 Connect to your MySQL server:
+
 ```
 $ sudo mysql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -103,6 +106,7 @@ mysql> quit
 Bye
 $
 ```
+
 ## Use “container-on-demand” to run MySQL
 <strong>In the container, credentials are `root/root`</strong>
 
@@ -116,7 +120,7 @@ $ service mysql start
  * Starting MySQL database server mysqld
 $
 $ cat 0-list_databases.sql | mysql -uroot -p
-Database                                                                        
+Database
 information_schema
 mysql
 performance_schema
