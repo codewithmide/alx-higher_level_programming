@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-a script that prints the State object with the name passed as argument from the database hbtn_0e_6_usa
+a script that prints the State object
+with the name passed as argument from the database hbtn_0e_6_usa
 """
 
 import sqlalchemy
