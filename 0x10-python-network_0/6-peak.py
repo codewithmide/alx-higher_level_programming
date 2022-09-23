@@ -1,25 +1,18 @@
 #!/usr/bin/python3
 
 
-def find_peak(nums):
+def find_peak(list_of_integers):
     '''
-        Finds the pick in a list of numbers
+        Finds the peak in a list of numbers
     '''
-    length = len(nums)
-    if length == 0:
+    arr = list_of_integers
+    n = len(arr)
+    if n == 0:
         return None
-    if length == 1:
-        return (nums[0])
-    if length == 2:
-        return nums[0] if nums[0] >= nums[1] else nums[1]
-
-    for idx in range(0, length):
-        value = nums[idx]
-        if (idx > 0 and idx < length - 1 and
-                nums[idx + 1] <= value and nums[idx - 1] <= value):
-                return value
-        elif idx == 0 and nums[idx + 1] <= value:
-            return value
-        elif idx == length - 1 and nums[idx - 1] <= value:
-            return value
-    return pick
+    mid = n // 2
+    if (mid == n - 1 or arr[mid] >= arr[mid + 1]) and (mid == 0 or arr[mid] >=
+                                                       arr[mid - 1]):
+        return arr[mid]
+    if mid != n - 1 and arr[mid + 1] > arr[mid]:
+        return find_peak(arr[mid + 1:])
+    return find_peak(arr[:mid])
