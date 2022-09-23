@@ -6,17 +6,18 @@ In addition, it handles HTTPError exceptions to print
 the HTTP Status Code, if an error occurs.
 """
 
-from sys import argv
+
+import sys
 from urllib.request import Request, urlopen
-from urllib.parse import urlencode
 from urllib.error import HTTPError
 
-
 if __name__ == "__main__":
-    req = Request(argv[1])
+    url = sys.argv[1]
+    req = Request(url)
 
     try:
-        with urlopen(req) as res:
-            print(res.read().decode('utf-8'))
-    except HTTPError as ex:
-        print('Error code:', ex.code)
+        with urlopen(req) as request:
+            data = request.read()
+            print(data.decode("utf-8"))
+    except HTTPError as error:
+        print("Error code: {}".format(error.code))
