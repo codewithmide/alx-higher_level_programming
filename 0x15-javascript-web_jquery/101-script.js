@@ -17,7 +17,7 @@ $(function() {
     var newItem = '<li>Item</li>';
 
     $(addItem).click(function () { 
-        $('.my_list').append(newItem);
+        $('UL.my_list').append(newItem);
     });
 
     $(removeItem).click(function () {
@@ -25,6 +25,6 @@ $(function() {
     });
 
     $(clearList).click(function () { 
-        $('.my_list').empty(newItem);
+        $('UL.my_list').empty(newItem);
     });
 });
